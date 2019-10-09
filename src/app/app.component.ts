@@ -18,7 +18,7 @@ from([20, 15, 10, 5]).subscribe(
   () => console.log('Complete')
   );
 
-  of ('Apple1', 'Apple2', 'Apple3')
+  of('Apple1', 'Apple2', 'Apple3')
     .subscribe(
       apple => console.log('Apple was emiited ${apple}'),
       err => console.error('Error occured: ${err}'),
