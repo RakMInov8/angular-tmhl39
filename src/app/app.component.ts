@@ -18,11 +18,11 @@ from([20, 15, 10, 5]).subscribe(
   () => console.log('Complete')
   );
 
-  of ('Rakesh', 'Denis', 'Mike')
+  of ('Apple1', 'Apple2', 'Apple3')
     .subscribe(
-      Rakesh => console.log('Rakesh was emiited ${Rakesh}'),
+      apple => console.log('Apple was emiited ${apple}'),
       err => console.error('Error occured: ${err}'),
-      () => console.log('No more employees, go home')
+      () => console.log('No more apples, go home')
     );
   }
 }
