@@ -13,14 +13,16 @@ ngOnInit(){
   of(2,4,6,8).subscribe(console.log);
 
 from([20, 15, 10, 5]).subscribe(
-  item => console.log('resulting item ..${item}'),
-  err => console.error('error occureed ${err}'),
+  item => console.log(`resulting item ..${item}`),
+  err => console.error(`error occureed ${err}`),
   () => console.log('Complete')
   );
 
-
-
+  of ('Rakesh', 'Denis', 'Mike')
+    .subscribe(
+      Rakesh => console.log('Rakesh was emiited ${Rakesh}'),
+      err => console.error('Error occured: ${err}'),
+      () => console.log('No more employees, go home')
+    );
+  }
 }
-
-}
-
