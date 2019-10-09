@@ -6,14 +6,14 @@ import {of, from} from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent implements onInit  {
+export class AppComponent implements OnInit  {
   name = 'Angular';
 
-ngonInit(){
+ngOnInit(){
   of(2,4,6,8).subscribe(console.log);
 
 from([20, 15, 10, 5]).subscribe(
-  item => console.log('resulting item ..${item}',
+  item => console.log('resulting item ..${item}'),
   err => console.error('error occureed ${err}'),
   () => console.log('Complete')
   );
